@@ -1,0 +1,5 @@
+/home/andrewking/Documents/VSCODE/sample/build/CMakeFiles/edit_cache.dir
+/home/andrewking/Documents/VSCODE/sample/build/CMakeFiles/rebuild_cache.dir
+/home/andrewking/Documents/VSCODE/sample/build/src/CMakeFiles/hello.dir
+/home/andrewking/Documents/VSCODE/sample/build/src/CMakeFiles/edit_cache.dir
+/home/andrewking/Documents/VSCODE/sample/build/src/CMakeFiles/rebuild_cache.dir
