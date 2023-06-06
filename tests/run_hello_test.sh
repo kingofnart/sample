@@ -8,10 +8,14 @@ echo ""
 echo "*** Running hello test"
 
 # Run hello and capture the output.
-../src/fizzbuzz > hello.txt
+../src/hello > hello.txt
+../src/fizzbuzz > fizzbuzz.txt
+
 
 # Check against expected output.
 cmp hello.txt ref_hello.txt
+cmp fizzbuzz.txt ref_fizzbuzz.txt
+
 
 echo "*** SUCCESS!"
 exit 0
