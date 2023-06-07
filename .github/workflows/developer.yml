@@ -33,6 +33,7 @@ jobs:
         run: |
           mkdir build
           cd build
-          cmake -DENABLE_DOCS=ON ..
+          cmake ..
+        # -DENABLE_DOCS=ON ..
           make VERBOSE=1
           make test
