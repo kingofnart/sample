@@ -16,5 +16,9 @@ endfunction()
 FILE(COPY ${CMAKE_CURRENT_SOURCE_DIR}/ref_hello.txt
     DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
+# Copy the reference file that contains expected output.
+FILE(COPY ${CMAKE_CURRENT_SOURCE_DIR}/ref_fizzbuzz.txt
+    DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+
 # Run the test script.
 sh_test(run_hello_test)

@@ -9,11 +9,14 @@ echo "*** Running hello test"
 
 # Run hello and capture the output.
 ../src/hello > hello.txt
-../src/fizzbuzz > fizzbuzz.txt
+
 
 
 # Check against expected output.
 cmp hello.txt ref_hello.txt
+
+# Run and compare with other file
+../src/fizzbuzz > fizzbuzz.txt
 cmp fizzbuzz.txt ref_fizzbuzz.txt
 
 
