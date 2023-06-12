@@ -7,11 +7,13 @@ set -e
 echo ""
 echo "*** Running hello test"
 
-# Run hello and capture the output.
-../src/fizzbuzz > hello.txt
+# Run hello and fizzbuzz programs and capture the output.
+../src/hello > hello.txt
+../src/fizzbuzz > fizzbuzz.txt
 
-# Check against expected output.
+# Check acutal against expected output.
 cmp hello.txt ref_hello.txt
+cmp fizzbuzz.txt ref_fizzbuzz.txt
 
 echo "*** SUCCESS!"
 exit 0

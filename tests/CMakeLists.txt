@@ -12,8 +12,12 @@ function(sh_test name)
   add_test(NAME ${name}.sh COMMAND bash ${name}.sh)
 endfunction()
 
-# Copy the reference file that contains expected output.
+# Copy the reference file that contains expected output for hello program.
 FILE(COPY ${CMAKE_CURRENT_SOURCE_DIR}/ref_hello.txt
+    DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+
+# Copy the reference file that contains expected output for fizzbuzz program.
+FILE(COPY ${CMAKE_CURRENT_SOURCE_DIR}/ref_fizzbuzz.txt
     DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
 # Run the test script.
