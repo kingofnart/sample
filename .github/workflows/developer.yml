@@ -26,7 +26,7 @@ jobs:
     steps:
       - name: install-dependences
         run: |
-          sudo apt-get install doxygen
+          sudo apt-get install doxygen graphviz
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
@@ -36,6 +36,6 @@ jobs:
         run: |
           mkdir build
           cd build
-          cmake -DENABLE_DOCS=OFF ..
+          cmake -DENABLE_DOCS=ON ..
           make VERBOSE=1
           make test
