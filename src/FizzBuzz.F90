@@ -17,11 +17,11 @@ program hello
    call fizzbuzz(MAX_COUNT)
 end program hello
 
-!! Prints 'FizzBuzz' if 1 % 15 = 0
-!! Otherwise prints 'Fizz' if 1 % 3 = 0 or 'Buzz' if 1 % 5 = 0
-!! Otherwise prints i
-!!
-!! @param[in]   max_count    number of iterations to run for
+!> Prints 'FizzBuzz' if 1 % 15 = 0
+!> Otherwise prints 'Fizz' if 1 % 3 = 0 or 'Buzz' if 1 % 5 = 0
+!> Otherwise prints i
+!>
+!> @param[in]   max_count    number of iterations to run for
 !>
 !> @author Andrew King, @date 6/12/23
 subroutine fizzbuzz(max_count)
@@ -43,11 +43,11 @@ subroutine fizzbuzz(max_count)
    end do
 end subroutine fizzbuzz
 
-!! Returns true if input modulo 3 = 0
-!!
-!! @param[in]   number    input integer
-!!
-!! @return boolean of (number % 3)
+!> Returns true if input modulo 3 = 0
+!>
+!> @param[in]   number    input integer
+!>
+!> @return boolean of (number % 3)
 !>
 !> @author Andrew King, @date 6/12/23
 function fizzy(number)
@@ -62,11 +62,11 @@ function fizzy(number)
    endif
 end function fizzy
 
-!! Returns true if input modulo 5 = 0
-!!
-!! @param[in]   number    input integer
-!!
-!! @return boolean of (number % 5)
+!> Returns true if input modulo 5 = 0
+!>
+!> @param[in]   number    input integer
+!>
+!> @return boolean of (number % 5)
 !>
 !> @author Andrew King, @date 6/12/23
 function buzzy(number)

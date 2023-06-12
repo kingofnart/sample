@@ -35,11 +35,11 @@ end program hello
     end do
   end subroutine fizzbuzz
   
-!! Returns true if input modulo 3 = 0
-!!
-!! @param[in]   number    input integer
-!!
-!! @return boolean of (number % 3)
+!> Returns true if input modulo 3 = 0
+!>
+!> @param[in]   number    input integer
+!>
+!> @return boolean of (number % 3)
 !>
 !> @author Andrew King, @date 6/12/23
   function fizzy(number)
@@ -54,11 +54,11 @@ end program hello
     endif
   end function fizzy
 
-!! Returns true if input modulo 5 = 0
-!!
-!! @param[in]   number    input integer
-!!
-!! @return boolean of (number % 5)
+!> Returns true if input modulo 5 = 0
+!>
+!> @param[in]   number    input integer
+!>
+!> @return boolean of (number % 5)
 !>
 !> @author Andrew King, @date 6/12/23
   function buzzy(number)
