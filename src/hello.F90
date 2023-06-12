@@ -1,11 +1,13 @@
 !> @file
-!> This is a Fortran file.
+!> @brief This is a FizzBuzz Fortran file.
 !>
-!> @author Andrew King, @date 6/5/23
+!> @author Andrew King, @date 6/12/23
 
-!> This is a Fortran program.
+!> This says hello and does fizzbuzz.
 !>
-!> @author Andrew King, @date 6/5/23
+!> @return 0 if successful.
+!>
+!> @author Andrew King, @date 6/12/23
 program hello
     implicit none
     integer :: MAX_COUNT
@@ -15,11 +17,11 @@ program hello
     call fizzbuzz(MAX_COUNT)
 end program hello
   
-!> @brief Runs fizzbuzz logic for input iterations
-!!
-!! Prints i, 'Fizz' if 1 % 3 = 0, and 'Buzz' if 1 % 5 = 0
-!!
-!! @param[in]   max_count    number of iterations to run for
+!> Prints i, 'Fizz' if 1 % 3 = 0, and 'Buzz' if 1 % 5 = 0
+!>
+!> @param[in]   max_count    number of iterations to run for
+!>
+!> @author Andrew King, @date 6/12/23
   subroutine fizzbuzz(max_count)
     implicit none
     integer, intent(in) :: max_count
@@ -33,12 +35,13 @@ end program hello
     end do
   end subroutine fizzbuzz
   
-!> @brief Checks if input is multiple of 3
-!!
 !! Returns true if input modulo 3 = 0
 !!
 !! @param[in]   number    input integer
+!!
 !! @return boolean of (number % 3)
+!>
+!> @author Andrew King, @date 6/12/23
   function fizzy(number)
     implicit none
     integer, intent(in) :: number
@@ -51,12 +54,13 @@ end program hello
     endif
   end function fizzy
 
-  !> @brief Checks if input is multiple of 5
-!!
 !! Returns true if input modulo 5 = 0
 !!
 !! @param[in]   number    input integer
+!!
 !! @return boolean of (number % 5)
+!>
+!> @author Andrew King, @date 6/12/23
   function buzzy(number)
     implicit none
     integer, intent(in) :: number
