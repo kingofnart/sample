@@ -15,6 +15,11 @@ program hello
     call fizzbuzz(MAX_COUNT)
 end program hello
   
+!> @brief Runs fizzbuzz logic for input iterations
+!!
+!! Prints i, 'Fizz' if 1 % 3 = 0, and 'Buzz' if 1 % 5 = 0
+!!
+!! @param[in]   max_count    number of iterations to run for
   subroutine fizzbuzz(max_count)
     implicit none
     integer, intent(in) :: max_count
@@ -28,6 +33,12 @@ end program hello
     end do
   end subroutine fizzbuzz
   
+!> @brief Checks if input is multiple of 3
+!!
+!! Returns true if input modulo 3 = 0
+!!
+!! @param[in]   number    input integer
+!! @return boolean of (number % 3)
   function fizzy(number)
     implicit none
     integer, intent(in) :: number
@@ -39,7 +50,13 @@ end program hello
        fizzy = .false.
     endif
   end function fizzy
-  
+
+  !> @brief Checks if input is multiple of 5
+!!
+!! Returns true if input modulo 5 = 0
+!!
+!! @param[in]   number    input integer
+!! @return boolean of (number % 5)
   function buzzy(number)
     implicit none
     integer, intent(in) :: number
